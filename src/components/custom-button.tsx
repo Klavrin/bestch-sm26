@@ -33,7 +33,7 @@ const CustomButton = ({
 
           <img
             src="./src/assets/custom-button-arrow.svg"
-            className={`absolute -right-[0%] pointer-events-none h-[90%] w-auto ${imgStyles}`}
+            className={`absolute -right-[2%] pointer-events-none h-[70%] w-auto ${imgStyles}`}
             loading="lazy"
           />
         </div>
