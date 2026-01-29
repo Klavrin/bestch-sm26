@@ -13,7 +13,7 @@ const ServiceParagraph = ({ title, paragraph, pdfFile }: ParagraphProps) => {
 
   return (
     <div className="py-[57px]">
-      <h2 className="text-white/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
+      <h2 className="text-black/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
         {t(title)}
       </h2>
 

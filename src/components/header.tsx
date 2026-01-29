@@ -7,7 +7,6 @@ import { setDialogVisibility } from '../store/reducers/dialog-visible-slice'
 import useCursorSize from '../lib/use-cursor-size'
 import HamburgerMenu from './hamburger-menu'
 import MobileDrawer from './mobile-drawer'
-import LanguageDropdownMenu from './language-dropdown-menu'
 
 const Header = () => {
   const [drawerOpened, setDrawerOpened] = useState(false)
@@ -17,18 +16,21 @@ const Header = () => {
   const dispatch = useDispatch()
 
   const links = [
-    { title: 'About us', to: '/' },
-    { title: 'Services', to: '/' },
-    { title: 'Contact', onClick: () => dispatch(setDialogVisibility()) }
+    { title: 'About the Course', to: '/' },
+    { title: 'Survival Guide', to: '/' },
+    { title: 'Schedule', to: '/' },
+    { title: 'Apply Now', to: '/' },
+    { title: 'Contacts', to: '/' }
+    // { title: 'Schedul', onClick: () => dispatch(setDialogVisibility()) }
   ]
 
   return (
     <header className="w-screen absolute z-40 transform-gpu">
-      <div className="max-w-[1400px] h-[75px] mx-auto xl:px-[75px] px-[18px] text-white flex justify-between items-center transition-[padding] duration-500">
+      <div className="max-w-[1400px] h-[75px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
         <div className="sm:static absolute left-0 sm:w-auto w-screen text-center">
           <Link
             to="/"
-            className="text-white/60 sm:hover:text-white text-[50px] font-humane font-bold leading-normal tracking-normal sm:hover:tracking-wider transition-[letter-spacing]"
+            className="text-black/60 sm:hover:text-black text-[50px] font-humane font-bold leading-normal tracking-normal sm:hover:tracking-wider transition-[letter-spacing]"
             onMouseOver={() => setCursorSize(100)}
             onMouseLeave={() => setCursorSize(40)}
           >
@@ -44,7 +46,7 @@ const Header = () => {
         />
         <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)} />
         <nav className="sm:flex hidden gap-[15px] items-center text-[15px]">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <Fragment key={link.title}>
               <Link
                 to={link.to ? link.to : '#'}
@@ -56,15 +58,16 @@ const Header = () => {
                 {t(link.title)}
               </Link>
 
-              <img
-                src="./src/assets/ellipse.svg"
-                alt=""
-                className="-z-50"
-                loading="lazy"
-              />
+              {index !== links.length - 1 && (
+                <img
+                  src="./src/assets/ellipse.svg"
+                  alt=""
+                  className="-z-50"
+                  loading="lazy"
+                />
+              )}
             </Fragment>
           ))}
-          <LanguageDropdownMenu />
         </nav>
       </div>
     </header>

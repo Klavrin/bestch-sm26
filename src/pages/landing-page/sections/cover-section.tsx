@@ -15,7 +15,8 @@ const CoverSection = () => {
     <section className="xl:h-screen h-full pb-[50px] pt-[120px] flex flex-col justify-center">
       <div className="flex flex-col">
         <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-normal">
-          {t('At')}
+          21.07 - 28.07
+          {/* {t('')} */}
         </h1>
         <img
           src="./src/assets/media-unbothered.svg"
@@ -25,8 +26,9 @@ const CoverSection = () => {
           onMouseLeave={() => setCursorSize(40)}
           loading="lazy"
         />
-        <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-normal">
-          {t('we defy the odds.')}
+        <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-[1] mt-[2vw]">
+          When Code Makes Decisions:
+          <br /> A Gentle Introduction to Agentic AI
         </h1>
       </div>
 

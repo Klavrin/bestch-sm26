@@ -22,7 +22,7 @@ const PrivacyPolicyPage = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="max-w-[1400px] mx-auto text-white xl:px-[75px] px-[18px] transform-gpu text-2xl md:pt-[220px] pt-[110px]">
+    <section className="max-w-[1400px] mx-auto text-black xl:px-[75px] px-[18px] transform-gpu text-2xl md:pt-[220px] pt-[110px]">
       <h1 className="md:text-9xl text-6xl text-center">{t(data.title)}</h1>
       <h4 className="text-xl mb-20 text-center">{t(data.updated)}</h4>
 
