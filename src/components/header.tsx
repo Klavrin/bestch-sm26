@@ -15,12 +15,20 @@ const Header = () => {
   const { t } = useTranslation()
   const dispatch = useDispatch()
 
+  const handleHashClick = (e: React.MouseEvent, to: string) => {
+    if (to.startsWith('#')) {
+      e.preventDefault()
+      const element = document.querySelector(to)
+      element?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const links = [
-    { title: 'About the Course', to: '/' },
-    { title: 'Survival Guide', to: '/' },
-    { title: 'Schedule', to: '/' },
-    { title: 'Apply Now', to: '/' },
-    { title: 'Contacts', to: '/' }
+    { title: 'About the Course', to: '#about' },  // matches id="about"
+    { title: 'Survival Guide', to: '#survival-guide' },
+    { title: 'Schedule', to: '#schedule' },
+    { title: 'Apply Now', to: '#apply' },
+    { title: 'Contacts', to: '#contacts' }
     // { title: 'Schedul', onClick: () => dispatch(setDialogVisibility()) }
   ]
 
@@ -57,7 +65,7 @@ const Header = () => {
                 className="hover:opacity-70 transition-all"
                 onMouseOver={() => setCursorSize(60)}
                 onMouseLeave={() => setCursorSize(40)}
-                onClick={() => dispatch(setDialogVisibility())}
+                onClick={() => dispatch(handleHashClick())}
               >
                 {t(link.title)}
               </Link>
