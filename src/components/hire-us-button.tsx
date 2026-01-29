@@ -18,7 +18,7 @@ const HireUsButton = ({ onClick }: HireUsButtonProps) => {
           src="./src/assets/hire-us-button.png"
           className="w-[150px] h-[150px] hover:rotate-180 transition-all duration-500 ease-in-out cursor-pointer"
           alt="Hire us"
-          onMouseOver={() => setCursorSize(150)}
+          onMouseOver={() => setCursorSize(0)}
           onMouseLeave={() => setCursorSize(40)}
           loading="lazy"
         />
