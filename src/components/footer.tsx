@@ -21,7 +21,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="max-w-[1400px] mx-auto xl:px-[75px] px-[18px] pt-10 pb-5 text-white transform-gpu">
+    <footer className="max-w-[1400px] mx-auto xl:px-[75px] px-[18px] pt-10 pb-5 text-black transform-gpu">
       <img
         src="./src/assets/media-unbothered.svg"
         alt="Media Unbothered"

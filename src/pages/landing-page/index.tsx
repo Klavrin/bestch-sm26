@@ -10,8 +10,8 @@ const LandingPage = () => {
         <CoverSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <WhyUsSection />
-        <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
-        <OurServicesSection />
+        {/* <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" /> */}
+        {/* <OurServicesSection /> */}
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <ReadyToChatSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />

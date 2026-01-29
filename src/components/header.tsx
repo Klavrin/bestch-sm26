@@ -26,15 +26,19 @@ const Header = () => {
 
   return (
     <header className="w-screen absolute z-40 transform-gpu">
-      <div className="max-w-[1400px] h-[75px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
+      <div className="max-w-[1400px] h-[120px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
         <div className="sm:static absolute left-0 sm:w-auto w-screen text-center">
           <Link
             to="/"
-            className="text-black/60 sm:hover:text-black text-[50px] font-humane font-bold leading-normal tracking-normal sm:hover:tracking-wider transition-[letter-spacing]"
+            className="inline-block hover:opacity-80 transition-opacity"
             onMouseOver={() => setCursorSize(100)}
             onMouseLeave={() => setCursorSize(40)}
           >
-            MEDIA UNBOTHERED
+            <img
+              src="./src/assets/bestch.png"
+              alt="Best Summer Course"
+              className="xl:h-[100px] h-[70px]"
+            />
           </Link>
         </div>
 

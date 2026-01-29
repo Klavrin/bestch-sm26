@@ -12,8 +12,8 @@ const ReadyToChatSection = () => {
 
   return (
     <section className="md:py-[130px] py-[50px]">
-      <h2 className="text-white/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
-        {t('Ready to have a chat?')}
+      <h2 className="text-black/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
+        {t('Need more information?')}
       </h2>
 
       <p
@@ -21,20 +21,23 @@ const ReadyToChatSection = () => {
         onMouseOver={() => setCursorSize(80)}
         onMouseLeave={() => setCursorSize(40)}
       >
-        {t(
+        {/* {t(
           "Eager to transform your digital aspirations into a tangible online presence? We're at your service. Whether you have a specific project in mind or are keen on exploring potential opportunities, the Media Unbothered team is prepared for a meaningful discussion."
-        )}
+        )} */}
+        Start your Agentic AI journey today! Whether you have a specific project in mind
+        or are keen on exploring potential opportunities, this course is designed to guide
+        you every step of the way.
       </p>
 
       <div className="flex justify-center md:gap-[46px] gap-[18px] mt-[66px]">
-        <DashedButton innerText="About us" />
+        <DashedButton innerText="Schdule" />
         <CustomButton
-          innerText="Let's talk."
+          innerText="Apply Now!"
           styles="xl:px-[117px] md:px-[8.35vw] px-[53px] py-[10px] xl:text-[60px] text-[4.28vw]"
           imgStyles="xl:min-w-[70px] sm:min-w-[5vw] min-w-[30px]"
           onClick={() => dispatch(setDialogVisibility())}
         />
-        <DashedButton innerText="About us" />
+        <DashedButton innerText="Schedule" />
       </div>
     </section>
   )

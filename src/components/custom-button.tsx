@@ -24,7 +24,7 @@ const CustomButton = ({
       <div className={`flex ${hideForWideScreens && 'md:hidden'}`} onClick={onClick}>
         <div className="flex items-center relative">
           <button
-            className={`bg-white text-black rounded-[56px] whitespace-nowrap flex items-center ${styles}`}
+            className={`bg-[#FF9800] text-black rounded-[56px] whitespace-nowrap flex items-center ${styles}`}
             onMouseOver={() => setCursorSize(180)}
             onMouseLeave={() => setCursorSize(40)}
           >
