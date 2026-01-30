@@ -21,10 +21,12 @@ const Header = () => {
   }
 
   const scheduleUrl = new URL('../assets/Schedule.xlsx', import.meta.url).href
+  const survivalGuideUrl = new URL("../assets/Survival Guide SC'26.pdf", import.meta.url)
+    .href
 
   const links = [
     { title: 'About the Course', to: '#about' }, // matches id="about"
-    { title: 'Survival Guide', to: '#survival-guide' },
+    { title: 'Survival Guide', download: survivalGuideUrl },
     { title: 'Schedule', download: scheduleUrl },
     { title: 'Apply Now', to: '#apply' },
     { title: 'Contacts', to: '#contacts' }

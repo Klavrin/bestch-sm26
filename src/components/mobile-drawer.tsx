@@ -1,13 +1,11 @@
-import { useEffect } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { useTranslation } from 'react-i18next'
 import MobileLanguageDropdownMenu from './mobile-language-dropdown-menu'
-import { useDispatch } from 'react-redux'
-import { setDialogVisibility } from '../store/reducers/dialog-visible-slice'
 
 type MobileDrawerProps = {
-  links: { title: string; to?: string }[]
+  links: { title: string; to?: string; download?: string }[]
   drawerOpened: boolean
   closeDrawer: () => void
   drawerRef: React.RefObject<HTMLDivElement>
@@ -20,7 +18,6 @@ const MobileDrawer = ({
   drawerRef
 }: MobileDrawerProps) => {
   const { t } = useTranslation()
-  const dispatch = useDispatch()
 
   useEffect(() => {
     const handleResize = () => {
@@ -69,14 +66,41 @@ const MobileDrawer = ({
 
       <div className="h-full flex flex-col justify-center gap-4">
         {links.map((link) => (
-          <Link
-            to={link.to ? link.to : '#'}
-            key={link.title}
-            className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
-            onClick={() => dispatch(setDialogVisibility())}
-          >
-            {t(link.title)}
-          </Link>
+          <Fragment key={link.title}>
+            {link.download ? (
+              <a
+                href={link.download}
+                download
+                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                onClick={() => {
+                  closeDrawerWithAnimation()
+                }}
+              >
+                {t(link.title)}
+              </a>
+            ) : link.to && link.to.startsWith('#') ? (
+              <a
+                href={link.to}
+                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                onClick={(e) => {
+                  e.preventDefault()
+                  const element = document.querySelector(link.to ? link.to : '#')
+                  element?.scrollIntoView({ behavior: 'smooth' })
+                  closeDrawerWithAnimation()
+                }}
+              >
+                {t(link.title)}
+              </a>
+            ) : (
+              <Link
+                to={link.to ? link.to : '#'}
+                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                onClick={() => closeDrawerWithAnimation()}
+              >
+                {t(link.title)}
+              </Link>
+            )}
+          </Fragment>
         ))}
         <MobileLanguageDropdownMenu />
       </div>
