@@ -34,13 +34,16 @@ const CoverSection = () => {
 
       <div className="flex-inline md:flex md:flex-row flex-col md:mt-[38px] mt-[18px]">
         <p
-          className="max-w-2/3 md:text-[30px] text-[20px] font-light leading-[100%] opacity-60 mb-[25px]"
+          className="max-w-2/3 md:text-[30px] text-[20px] font-light leading-[100%] opacity-60 mb-[25px] mr-[30px]"
           onMouseOver={() => setCursorSize(80)}
           onMouseLeave={() => setCursorSize(40)}
         >
-          {t(
+          {/* {t(
             "Welcome to Media Unbothered, where digital dreams become reality. At Media Unbothered, we don't just build websites; we craft digital experiences that leave an everlasting impression. In a world where the digital landscape is constantly evolving, we thrive on staying ahead of the curve, unbothered by the ordinary."
-          )}
+          )} */}
+          Are you ready to embark on a journey of a lifetime, where you get to form
+          lasting friendships, learn new skills, have the fun of your life and explore the
+          culture of Moldova? Then don't hesitate and apply to our course now!
         </p>
 
         <HireUsButton onClick={() => dispatch(setDialogVisibility())} />
