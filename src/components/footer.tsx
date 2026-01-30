@@ -7,10 +7,10 @@ const Footer = () => {
   const { t } = useTranslation()
 
   const links = [
-    { title: 'HOME', to: '/' },
-    { title: 'ABOUT US', to: '/about-us' },
+    { title: 'ABOUT THE COURSE', to: '#about' },
     //{ title: 'PRIVACY POLICY', to: '/privacy-policy' },
-    { title: 'USAGE MANUAL', to: '/usage-manual' }
+    { title: 'APPLY NOW', to: '#apply' },
+    { title: 'CONTACTS', to: '#contacts' }
   ]
 
   const socials = [
@@ -30,6 +30,14 @@ const Footer = () => {
       to: 'https://www.linkedin.com/company/best-chisinau/posts/?feedView=all'
     }
   ]
+
+  const handleHashClick = (e: React.MouseEvent, to: string) => {
+    if (to.startsWith('#')) {
+      e.preventDefault()
+      const element = document.querySelector(to)
+      element?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <footer className="max-w-[1400px] mx-auto xl:px-[75px] px-[18px] pt-10 pb-5 text-black transform-gpu">
@@ -51,6 +59,7 @@ const Footer = () => {
               className="text-[15px] hover:opacity-70 transition-all"
               onMouseOver={() => setCursorSize(60)}
               onMouseLeave={() => setCursorSize(40)}
+              onClick={(e) => handleHashClick(e, link.to ? link.to : '#')}
             >
               {t(link.title)}
             </Link>
