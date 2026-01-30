@@ -12,11 +12,9 @@ const TeamSection = () => {
       phone: '+373 76 706 219'
     },
     {
-      image: './src/assets/photos/gaben.png',
+      image: './src/assets/photos/le_true_gaben.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Gabi',
     },
     {
       image: './src/assets/photos/serj_maximus.png',
@@ -34,9 +32,11 @@ const TeamSection = () => {
       name: 'Bolun Alexandra',
     },
     {
-      image: './src/assets/photos/le_true_gaben.png',
+      image: './src/assets/photos/gaben.png',
       title: 'Main Organizer',
-      name: 'Gabi',
+      name: 'Gabriela Bîtca',
+      email: 'gabriela.bitca@best-eu.org',
+      phone: '+373 76 706 219'
     },
     {
       image: './src/assets/photos/sopus.png',
