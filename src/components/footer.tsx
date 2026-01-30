@@ -14,10 +14,21 @@ const Footer = () => {
   ]
 
   const socials = [
-    { alt: 'Facebook', imageSrc: './src/assets/footer/Facebook.svg', to: '/' },
-    { alt: 'Instagram', imageSrc: './src/assets/footer/Instagram.svg', to: '/' },
-    { alt: 'X', imageSrc: './src/assets/footer/X.svg', to: '/' },
-    { alt: 'LinkedIn', imageSrc: './src/assets/footer/LinkedIn.svg', to: '/' }
+    {
+      alt: 'Facebook',
+      imageSrc: './src/assets/footer/Facebook.svg',
+      to: 'https://www.facebook.com/BEST.Chisinau/'
+    },
+    {
+      alt: 'Instagram',
+      imageSrc: './src/assets/footer/Instagram.svg',
+      to: 'https://www.instagram.com/best_chisinau/?hl=en'
+    },
+    {
+      alt: 'LinkedIn',
+      imageSrc: './src/assets/footer/LinkedIn.svg',
+      to: 'https://www.linkedin.com/company/best-chisinau/posts/?feedView=all'
+    }
   ]
 
   return (
