@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { setDialogVisibility } from '../../../store/reducers/dialog-visible-slice'
 
@@ -8,7 +7,6 @@ import useCursorSize from '../../../lib/use-cursor-size'
 
 const CoverSection = () => {
   const { setCursorSize } = useCursorSize()
-  const { t } = useTranslation()
   const dispatch = useDispatch()
 
   return (

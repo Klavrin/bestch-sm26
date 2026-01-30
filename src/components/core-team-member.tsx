@@ -2,8 +2,8 @@ interface CoreTeamMemberProps {
   image: string
   title: string
   name: string
-  email: string
-  phone: string
+  email?: string
+  phone?: string
   className?: string
 }
 
@@ -28,12 +28,16 @@ const CoreTeamMember = ({
         <h3 className="xl:text-[1.15vw] md:text-[2.2vw] text-[13px] font-bold mb-1 w-[60%] leading-[1.2]">
           {name}
         </h3>
-        <p className="xl:text-[0.65vw] md:text-[1.3vw] text-[8px] font-light opacity-90 mb-0.5">
-          {email}
-        </p>
-        <p className="xl:text-[0.8vw] md:text-[1.5vw] text-[9px] font-light opacity-90">
-          {phone}
-        </p>
+        {email && (
+          <p className="xl:text-[0.65vw] md:text-[1.3vw] text-[8px] font-light opacity-90 mb-0.5">
+            {email}
+          </p>
+        )}
+        {phone && (
+          <p className="xl:text-[0.8vw] md:text-[1.5vw] text-[9px] font-light opacity-90">
+            {phone}
+          </p>
+        )}
       </div>
     </div>
   )
