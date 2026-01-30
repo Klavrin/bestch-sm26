@@ -5,69 +5,63 @@ const TeamSection = () => {
   const { setCursorSize } = useCursorSize()
   const teamMembers = [
     {
-      image: './src/assets/photos/vasea_brinza.png',
+      image: './src/assets/photos/le_true_gaben.png',
       title: 'Main Organizer',
-      name: 'Brînză Vasile',
+      name: 'Gabriela Bîtca',
       email: 'gabriela.bitca@best-eu.org',
       phone: '+373 76 706 219'
     },
     {
-      image: './src/assets/photos/le_true_gaben.png',
-      title: 'Main Organizer',
-      name: 'Gabi',
-    },
-    {
-      image: './src/assets/photos/serj_maximus.png',
-      title: 'Main Organizer',
-      name: 'Sergiu Gherasim',
-    },
-    {
-      image: './src/assets/photos/le_tudor.png',
-      title: 'Main Organizer',
-      name: 'Tudor Deviză',
+      image: './src/assets/photos/vasea_brinza.png',
+      title: 'President',
+      name: 'Brînză Vasile',
+      email: 'vasile.brinza@best-eu.org',
+      phone: '+373 67 773 990'
     },
     {
       image: './src/assets/photos/le_bolun_alexandra.png',
-      title: 'Main Organizer',
-      name: 'Bolun Alexandra',
+      title: 'Academics',
+      name: 'Bolun Alexandra'
     },
     {
-      image: './src/assets/photos/gaben.png',
-      title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      image: './src/assets/photos/serj_maximus.png',
+      title: 'Activity',
+      name: 'Sergiu Gherasim'
     },
     {
-      image: './src/assets/photos/sopus.png',
-      title: 'Main Organizer',
-      name: 'Alexandru Avram',
+      image: './src/assets/photos/le_tudor.png',
+      title: 'Activity',
+      name: 'Tudor Deviză'
     },
     {
       image: './src/assets/photos/le_frunza_daniel.png',
-      title: 'Main Organizer',
-      name: 'Frunză Daniel',
+      title: 'Human Relations',
+      name: 'Frunză Daniel'
     },
     {
-      image: './src/assets/gabi.png',
-      title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      image: './src/assets/photos/sopus.png',
+      title: 'Corporate Relations',
+      name: 'Alexandru Avram'
     },
     {
-      image: './src/assets/gabi.png',
-      title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      image: './src/assets/photos/cristina.jpeg',
+      title: 'Logistics',
+      name: 'Cristina Corman'
     },
     {
-      image: './src/assets/gabi.png',
-      title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      image: './src/assets/photos/gaben.png',
+      title: 'Design',
+      name: 'Bianca Stratulat'
+    },
+    {
+      image: './src/assets/photos/lili.jpg',
+      title: 'Marketing',
+      name: 'Liliana Andronovici'
+    },
+    {
+      image: './src/assets/photos/octav.jpg',
+      title: 'IT Responsible',
+      name: 'Octavian Pleșca'
     }
   ]
 
