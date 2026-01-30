@@ -5,60 +5,48 @@ const TeamSection = () => {
   const { setCursorSize } = useCursorSize()
   const teamMembers = [
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/vasea_brinza.png',
+      title: 'Main Organizer',
+      name: 'Brînză Vasile',
+      email: 'gabriela.bitca@best-eu.org',
+      phone: '+373 76 706 219'
+    },
+    {
+      image: './src/assets/photos/gaben.png',
       title: 'Main Organizer',
       name: 'Gabriela Bîtca',
       email: 'gabriela.bitca@best-eu.org',
       phone: '+373 76 706 219'
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/serj_maximus.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Sergiu Gherasim',
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/le_tudor.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Tudor Deviză',
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/le_bolun_alexandra.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Bolun Alexandra',
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/le_true_gaben.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Gabi',
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/sopus.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Alexandru Avram',
     },
     {
-      image: './src/assets/gabi.png',
+      image: './src/assets/photos/le_frunza_daniel.png',
       title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
-    },
-    {
-      image: './src/assets/gabi.png',
-      title: 'Main Organizer',
-      name: 'Gabriela Bîtca',
-      email: 'gabriela.bitca@best-eu.org',
-      phone: '+373 76 706 219'
+      name: 'Frunză Daniel',
     },
     {
       image: './src/assets/gabi.png',
@@ -84,7 +72,7 @@ const TeamSection = () => {
   ]
 
   return (
-    <section className="md:py-[130px] py-[50px]">
+    <section className="md:py-[130px] py-[50px]" id="contacts">
       <h2 className="text-[#EB7400]/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5 block md:hidden">
         Meet the Team
       </h2>
