@@ -1,8 +1,6 @@
 import { Fragment, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { useDispatch } from 'react-redux'
-import { setDialogVisibility } from '../store/reducers/dialog-visible-slice'
 
 import useCursorSize from '../lib/use-cursor-size'
 import HamburgerMenu from './hamburger-menu'
@@ -13,7 +11,6 @@ const Header = () => {
   const drawerRef = useRef(null)
   const { setCursorSize } = useCursorSize()
   const { t } = useTranslation()
-  const dispatch = useDispatch()
 
   const handleHashClick = (e: React.MouseEvent, to: string) => {
     if (to.startsWith('#')) {
@@ -23,10 +20,12 @@ const Header = () => {
     }
   }
 
+  const scheduleUrl = new URL('../assets/Schedule.xlsx', import.meta.url).href
+
   const links = [
-    { title: 'About the Course', to: '#about' },  // matches id="about"
+    { title: 'About the Course', to: '#about' }, // matches id="about"
     { title: 'Survival Guide', to: '#survival-guide' },
-    { title: 'Schedule', to: '#schedule' },
+    { title: 'Schedule', download: scheduleUrl },
     { title: 'Apply Now', to: '#apply' },
     { title: 'Contacts', to: '#contacts' }
     // { title: 'Schedul', onClick: () => dispatch(setDialogVisibility()) }
@@ -60,15 +59,27 @@ const Header = () => {
         <nav className="sm:flex hidden gap-[15px] items-center text-[15px]">
           {links.map((link, index) => (
             <Fragment key={link.title}>
-              <Link
-                to={link.to ? link.to : '#'}
-                className="hover:opacity-70 transition-all"
-                onMouseOver={() => setCursorSize(60)}
-                onMouseLeave={() => setCursorSize(40)}
-                onClick={() => dispatch(handleHashClick())}
-              >
-                {t(link.title)}
-              </Link>
+              {link.download ? (
+                <a
+                  href={link.download}
+                  download
+                  className="hover:opacity-70 transition-all"
+                  onMouseOver={() => setCursorSize(60)}
+                  onMouseLeave={() => setCursorSize(40)}
+                >
+                  {t(link.title)}
+                </a>
+              ) : (
+                <Link
+                  to={link.to ? link.to : '#'}
+                  className="hover:opacity-70 transition-all"
+                  onMouseOver={() => setCursorSize(60)}
+                  onMouseLeave={() => setCursorSize(40)}
+                  onClick={(e) => handleHashClick(e, link.to ? link.to : '#')}
+                >
+                  {t(link.title)}
+                </Link>
+              )}
 
               {index !== links.length - 1 && (
                 <img
