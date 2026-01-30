@@ -48,7 +48,7 @@ const CoverSection = () => {
 
         <HireUsButton onClick={() => dispatch(setDialogVisibility())} />
         <CustomButton
-          innerText="Hire us"
+          innerText="Apply Now!"
           styles="text-[20px] px-[50px] py-[11px]"
           imgStyles="min-w-[40px]"
           hideForWideScreens
