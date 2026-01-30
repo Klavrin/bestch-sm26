@@ -84,7 +84,7 @@ const TeamSection = () => {
   ]
 
   return (
-    <section className="md:py-[130px] py-[50px]">
+    <section className="md:py-[130px] py-[50px]" id="contacts">
       <h2 className="text-[#EB7400]/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5 block md:hidden">
         Meet the Team
       </h2>
