@@ -4,6 +4,8 @@ import gsap from 'gsap'
 import { useTranslation } from 'react-i18next'
 import MobileLanguageDropdownMenu from './mobile-language-dropdown-menu'
 
+import MobileDrawerClose from '../assets/mobile-drawer-close.svg'
+
 type MobileDrawerProps = {
   links: { title: string; to?: string; download?: string }[]
   drawerOpened: boolean
@@ -58,7 +60,7 @@ const MobileDrawer = ({
       style={{ transform: `translateY(-100dvh)` }}
     >
       <img
-        src="./src/assets/mobile-drawer-close.svg"
+        src={MobileDrawerClose}
         onClick={closeDrawerWithAnimation}
         className="w-[30px] self-end mt-6 mr-4 cursor-pointer"
         loading="lazy"
