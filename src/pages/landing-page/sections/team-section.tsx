@@ -1,65 +1,76 @@
 import CoreTeamMember from '../../../components/core-team-member'
 import useCursorSize from '../../../lib/use-cursor-size'
+import leTrueGaben from '../../../assets/photos/le_true_gaben.png'
+import vaseaBrinza from '../../../assets/photos/vasea_brinza.png'
+import bolunAlexandra from '../../../assets/photos/le_bolun_alexandra.png'
+import serjMaximus from '../../../assets/photos/serj_maximus.png'
+import tudor from '../../../assets/photos/le_tudor.png'
+import frunzaDaniel from '../../../assets/photos/le_frunza_daniel.png'
+import sopus from '../../../assets/photos/sopus.png'
+import cristina from '../../../assets/photos/cristina.jpeg'
+import gaben from '../../../assets/photos/gaben.png'
+import lili from '../../../assets/photos/lili.jpg'
+import octav from '../../../assets/photos/octav.jpg'
 
 const TeamSection = () => {
   const { setCursorSize } = useCursorSize()
   const teamMembers = [
     {
-      image: './src/assets/photos/le_true_gaben.png',
+      image: leTrueGaben,
       title: 'Main Organizer',
       name: 'Gabriela Bîtca',
       email: 'gabriela.bitca@best-eu.org',
       phone: '+373 76 706 219'
     },
     {
-      image: './src/assets/photos/vasea_brinza.png',
+      image: vaseaBrinza,
       title: 'President',
       name: 'Brînză Vasile',
       email: 'vasile.brinza@best-eu.org',
       phone: '+373 67 773 990'
     },
     {
-      image: './src/assets/photos/le_bolun_alexandra.png',
+      image: bolunAlexandra,
       title: 'Academics',
       name: 'Bolun Alexandra'
     },
     {
-      image: './src/assets/photos/serj_maximus.png',
+      image: serjMaximus,
       title: 'Activity',
       name: 'Sergiu Gherasim'
     },
     {
-      image: './src/assets/photos/le_tudor.png',
+      image: tudor,
       title: 'Activity',
       name: 'Tudor Deviză'
     },
     {
-      image: './src/assets/photos/le_frunza_daniel.png',
+      image: frunzaDaniel,
       title: 'Human Relations',
       name: 'Frunză Daniel'
     },
     {
-      image: './src/assets/photos/sopus.png',
+      image: sopus,
       title: 'Corporate Relations',
       name: 'Alexandru Avram'
     },
     {
-      image: './src/assets/photos/cristina.jpeg',
+      image: cristina,
       title: 'Logistics',
       name: 'Cristina Corman'
     },
     {
-      image: './src/assets/photos/gaben.png',
+      image: gaben,
       title: 'Design',
       name: 'Bianca Stratulat'
     },
     {
-      image: './src/assets/photos/lili.jpg',
+      image: lili,
       title: 'Marketing',
       name: 'Liliana Andronovici'
     },
     {
-      image: './src/assets/photos/octav.jpg',
+      image: octav,
       title: 'IT Responsible',
       name: 'Octavian Pleșca'
     }

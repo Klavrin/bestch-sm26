@@ -1,6 +1,8 @@
 import useCursorSize from '../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
 
+import CustomButtonArrow from '../assets/custom-button-arrow.svg'
+
 type CustomButtonProps = {
   innerText: string
   styles?: string
@@ -32,7 +34,7 @@ const CustomButton = ({
           </button>
 
           <img
-            src="./src/assets/custom-button-arrow.svg"
+            src={CustomButtonArrow}
             className={`absolute -right-[5%] pointer-events-none h-[70%] w-auto ${imgStyles}`}
             loading="lazy"
           />

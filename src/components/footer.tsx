@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom'
 import useCursorSize from '../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
 
+import MediaUnbothered from '../assets/media-unbothered.svg'
+import Facebook from '../assets/footer/Facebook.svg'
+import Instagram from '../assets/footer/Instagram.svg'
+import LinkedIn from '../assets/footer/LinkedIn.svg'
+
 const Footer = () => {
   const { setCursorSize } = useCursorSize()
   const { t } = useTranslation()
@@ -16,17 +21,17 @@ const Footer = () => {
   const socials = [
     {
       alt: 'Facebook',
-      imageSrc: './src/assets/footer/Facebook.svg',
+      imageSrc: Facebook,
       to: 'https://www.facebook.com/BEST.Chisinau/'
     },
     {
       alt: 'Instagram',
-      imageSrc: './src/assets/footer/Instagram.svg',
+      imageSrc: Instagram,
       to: 'https://www.instagram.com/best_chisinau/?hl=en'
     },
     {
       alt: 'LinkedIn',
-      imageSrc: './src/assets/footer/LinkedIn.svg',
+      imageSrc: LinkedIn,
       to: 'https://www.linkedin.com/company/best-chisinau/posts/?feedView=all'
     }
   ]
@@ -42,7 +47,7 @@ const Footer = () => {
   return (
     <footer className="max-w-[1400px] mx-auto xl:px-[75px] px-[18px] pt-10 pb-5 text-black transform-gpu">
       <img
-        src="./src/assets/media-unbothered.svg"
+        src={MediaUnbothered}
         alt="Media Unbothered"
         className="w-screen -z-50"
         onMouseOver={() => setCursorSize(300)}

@@ -6,6 +6,9 @@ import useCursorSize from '../lib/use-cursor-size'
 import HamburgerMenu from './hamburger-menu'
 import MobileDrawer from './mobile-drawer'
 
+import Ellipse from '../assets/ellipse.svg'
+import BestCh from '../assets/bestch.png'
+
 const Header = () => {
   const [drawerOpened, setDrawerOpened] = useState(false)
   const drawerRef = useRef(null)
@@ -44,7 +47,7 @@ const Header = () => {
             onMouseLeave={() => setCursorSize(40)}
           >
             <img
-              src="./src/assets/bestch.png"
+              src={BestCh}
               alt="Best Summer Course"
               className="xl:h-[100px] h-[70px]"
             />
@@ -84,12 +87,7 @@ const Header = () => {
               )}
 
               {index !== links.length - 1 && (
-                <img
-                  src="./src/assets/ellipse.svg"
-                  alt=""
-                  className="-z-50"
-                  loading="lazy"
-                />
+                <img src={Ellipse} alt="" className="-z-50" loading="lazy" />
               )}
             </Fragment>
           ))}
