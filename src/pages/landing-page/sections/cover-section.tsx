@@ -5,6 +5,8 @@ import CustomButton from '../../../components/custom-button'
 import HireUsButton from '../../../components/hire-us-button'
 import useCursorSize from '../../../lib/use-cursor-size'
 
+import MediaUnbothered from '../../../assets/media-unbothered.svg'
+
 const CoverSection = () => {
   const { setCursorSize } = useCursorSize()
   const dispatch = useDispatch()
@@ -17,7 +19,8 @@ const CoverSection = () => {
           {/* {t('')} */}
         </h1>
         <img
-          src="./src/assets/media-unbothered.svg"
+          // src="./src/assets/media-unbothered.svg"
+          src={MediaUnbothered}
           alt="Media Unbothered"
           className="w-screen"
           onMouseOver={() => setCursorSize(300)}
