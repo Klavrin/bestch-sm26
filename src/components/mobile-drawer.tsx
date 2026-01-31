@@ -2,7 +2,6 @@ import { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { useTranslation } from 'react-i18next'
-import MobileLanguageDropdownMenu from './mobile-language-dropdown-menu'
 
 import MobileDrawerClose from '../assets/mobile-drawer-close.svg'
 
