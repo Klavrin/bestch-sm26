@@ -81,7 +81,9 @@ body {
   text-rendering: geometricPrecision;
 
   /* background-image: url('./src/assets/Background.svg'); */
-  background-image: url('public/Background.png');
+  /* background-image: url('public/Background.png'); */
+  background-image: url('/Background.png');
+  /* background-image: import('../assets/Background.png'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
