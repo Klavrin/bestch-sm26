@@ -9,6 +9,8 @@ import MobileDrawer from './mobile-drawer'
 import Ellipse from '../assets/ellipse.svg'
 import BestCh from '../assets/bestch.png'
 
+import BestCoursesImage from '../assets/best_courses.svg'
+
 const Header = () => {
   const [drawerOpened, setDrawerOpened] = useState(false)
   const drawerRef = useRef(null)
@@ -38,7 +40,7 @@ const Header = () => {
 
   return (
     <header className="w-screen absolute z-40 transform-gpu">
-      <div className="max-w-[1400px] h-[120px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
+      <div className="max-w-[1400px] h-[120px] mx-auto sm:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
         <div className="sm:static absolute left-0 sm:w-auto w-screen text-center">
           <Link
             to="/"
@@ -46,11 +48,18 @@ const Header = () => {
             onMouseOver={() => setCursorSize(100)}
             onMouseLeave={() => setCursorSize(40)}
           >
-            <img
-              src={BestCh}
-              alt="Best Summer Course"
-              className="xl:h-[100px] h-[70px]"
-            />
+            <div className="flex items-center gap-2">
+              <img
+                src={BestCoursesImage}
+                alt="Best Courses"
+                className="xl:h-[100px] h-[70px]"
+              />
+              <img
+                src={BestCh}
+                alt="Best Summer Course"
+                className="xl:h-[100px] h-[70px]"
+              />
+            </div>
           </Link>
         </div>
 
@@ -60,8 +69,14 @@ const Header = () => {
           closeDrawer={() => setDrawerOpened(false)}
           drawerRef={drawerRef}
         />
-        <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)} />
-        <nav className="sm:flex hidden gap-[15px] items-center text-[15px]">
+
+        {/* Hides the hamburger menu on large screens */}
+        <div className="lg:hidden">
+          <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)}/>
+        </div>
+
+        {/* On large screens showing the map */}
+        <nav className="lg:flex hidden gap-[15px] items-center text-[15px]">
           {links.map((link, index) => (
             <Fragment key={link.title}>
               {link.download ? (
