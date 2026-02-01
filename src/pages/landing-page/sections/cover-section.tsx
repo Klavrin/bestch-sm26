@@ -60,13 +60,19 @@ const CoverSection = () => {
           culture of Moldova? Then don't hesitate to apply to our course now!
         </p>
 
-        <HireUsButton onClick={() => dispatch(setDialogVisibility())} />
+        <HireUsButton
+          onClick={() =>
+            window.open('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+          }
+        />
         <CustomButton
           innerText="Apply Now!"
           styles="text-[20px] px-[50px] py-[11px]"
           imgStyles="min-w-[40px]"
           hideForWideScreens
-          onClick={() => dispatch(setDialogVisibility())}
+          onClick={() =>
+            window.open('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+          }
         />
       </div>
     </section>
