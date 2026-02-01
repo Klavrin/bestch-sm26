@@ -32,7 +32,7 @@ const OurServicesSection = () => {
   ]
 
   return (
-    <section ref={rootRef} className="md:py-[130px] py-[50px]">
+    <section ref={rootRef} className="md:py-[130px] py-[50px]" id="more-info">
       <h2 className="text-[#EB7400]/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
         Need more information?
       </h2>

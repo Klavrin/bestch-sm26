@@ -25,17 +25,12 @@ const Header = () => {
     }
   }
 
-  const scheduleUrl = new URL('../assets/Schedule.xlsx', import.meta.url).href
-  const survivalGuideUrl = new URL("../assets/Survival Guide SC'26.pdf", import.meta.url)
-    .href
-
   const links = [
-    { title: 'About the Course', to: '#about' }, // matches id="about"
-    { title: 'Survival Guide', download: survivalGuideUrl },
-    { title: 'Schedule', download: scheduleUrl },
+    { title: 'About the Course', to: '#about' },
+    { title: 'Survival Guide', to: '#more-info' },
+    { title: 'Schedule', to: '#more-info' },
     { title: 'Apply Now', to: '#apply' },
     { title: 'Contacts', to: '#contacts' }
-    // { title: 'Schedul', onClick: () => dispatch(setDialogVisibility()) }
   ]
 
   return (
@@ -72,7 +67,7 @@ const Header = () => {
 
         {/* Hides the hamburger menu on large screens */}
         <div className="lg:hidden">
-          <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)}/>
+          <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)} />
         </div>
 
         {/* On large screens showing the map */}
