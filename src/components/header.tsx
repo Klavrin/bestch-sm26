@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header className="w-screen absolute z-40 transform-gpu">
-      <div className="max-w-[1400px] h-[120px] mx-auto sm:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
+      <div className="max-w-[1400px] h-[120px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
         <div className="sm:static absolute left-0 sm:w-auto w-screen text-center">
           <Link
             to="/"
@@ -47,12 +47,12 @@ const Header = () => {
               <img
                 src={BestCoursesImage}
                 alt="Best Courses"
-                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[60px] w-auto transition-all duration-300"
+                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[50px] w-auto transition-all duration-300"
               />
               <img
                 src={BestCh}
                 alt="Best Summer Course"
-                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[60px] w-auto transition-all duration-300"
+                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[50px] w-auto transition-all duration-300"
               />
             </div>
           </Link>
@@ -65,12 +65,10 @@ const Header = () => {
           drawerRef={drawerRef}
         />
 
-        {/* Hides the hamburger menu on large screens */}
         <div className="lg:hidden">
           <HamburgerMenu drawerRef={drawerRef} openDrawer={() => setDrawerOpened(true)} />
         </div>
 
-        {/* On large screens showing the map */}
         <nav className="lg:flex hidden gap-[10px] items-center text-[15px]">
           {links.map((link, index) => (
             <Fragment key={link.title}>
