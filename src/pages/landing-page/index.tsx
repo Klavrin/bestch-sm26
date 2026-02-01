@@ -4,6 +4,7 @@ import ReadyToChatSection from './sections/ready-to-chat-section'
 import LearningObjectives from './sections/learning-objectives'
 import TeamSection from './sections/team-section'
 import InfoSection from './sections/info-section'
+import OurServicesSection from './sections/our-services-section'
 
 const LandingPage = () => {
   return (
@@ -16,7 +17,8 @@ const LandingPage = () => {
         <WhyUsSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <LearningObjectives />
-        {/* <OurServicesSection /> */}
+        <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
+        <OurServicesSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <ReadyToChatSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />

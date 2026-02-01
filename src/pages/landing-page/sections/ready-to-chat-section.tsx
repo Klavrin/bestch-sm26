@@ -30,14 +30,14 @@ const ReadyToChatSection = () => {
       </p>
 
       <div className="flex justify-center md:gap-[46px] gap-[18px] mt-[66px]">
-        <DashedButton innerText="Schdule" />
+        <DashedButton innerText="Apply Now!" />
         <CustomButton
           innerText="Apply Now!"
           styles="xl:px-[117px] md:px-[8.35vw] px-[53px] py-[10px] xl:text-[60px] text-[4.28vw]"
           imgStyles="xl:min-w-[70px] sm:min-w-[5vw] min-w-[30px]"
           onClick={() => dispatch(setDialogVisibility())}
         />
-        <DashedButton innerText="Schedule" />
+        <DashedButton innerText="Apply Now!" />
       </div>
     </section>
   )
