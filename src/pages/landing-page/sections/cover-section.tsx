@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { setDialogVisibility } from '../../../store/reducers/dialog-visible-slice'
 
 import CustomButton from '../../../components/custom-button'
 import HireUsButton from '../../../components/hire-us-button'
@@ -10,7 +8,6 @@ import MediaUnbothered from '../../../assets/media-unbothered.svg'
 
 const CoverSection = () => {
   const { setCursorSize } = useCursorSize()
-  const dispatch = useDispatch()
 
   const [isShortViewport, setIsShortViewport] = useState(false)
 
