@@ -54,25 +54,27 @@ const MobileDrawer = ({
   return (
     <div
       ref={drawerRef}
-      className={`w-screen h-[100dvh] bg-black text-white text-center flex lg:hidden flex-col fixed right-0 top-0 z-40`}
+      className={`w-screen h-[100dvh] bg-black text-white text-center flex lg:hidden flex-col fixed right-0 top-0 z-40 overflow-y-auto`}
       // style={{ transform: `translateY(-${window.innerHeight}px)` }}
       style={{ transform: `translateY(-100dvh)` }}
     >
-      <img
-        src={MobileDrawerClose}
-        onClick={closeDrawerWithAnimation}
-        className="w-[30px] self-end mt-6 mr-4 cursor-pointer"
-        loading="lazy"
-      />
+      <div className="sticky top-0 bg-black z-10 py-6 pr-4 flex justify-end">
+        <img
+          src={MobileDrawerClose}
+          onClick={closeDrawerWithAnimation}
+          className="w-[30px] cursor-pointer"
+          loading="lazy"
+        />
+      </div>
 
-      <div className="h-full flex flex-col justify-center gap-4">
+      <div className="h-full flex flex-col justify-start gap-4">
         {links.map((link) => (
           <Fragment key={link.title}>
             {link.download ? (
               <a
                 href={link.download}
                 download
-                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                className="sm:text-6xl text-4xl font-semibold opacity-80 hover:opacity-100 transition-all"
                 onClick={() => {
                   closeDrawerWithAnimation()
                 }}
@@ -82,7 +84,7 @@ const MobileDrawer = ({
             ) : link.to && link.to.startsWith('#') ? (
               <a
                 href={link.to}
-                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                className="sm:text-6xl text-4xl font-semibold opacity-80 hover:opacity-100 transition-all"
                 onClick={(e) => {
                   e.preventDefault()
                   const element = document.querySelector(link.to ? link.to : '#')
@@ -95,7 +97,7 @@ const MobileDrawer = ({
             ) : (
               <Link
                 to={link.to ? link.to : '#'}
-                className="text-6xl font-semibold opacity-80 hover:opacity-100 transition-all"
+                className="sm:text-6xl text-4xl font-semibold opacity-80 hover:opacity-100 transition-all"
                 onClick={() => closeDrawerWithAnimation()}
               >
                 {t(link.title)}
