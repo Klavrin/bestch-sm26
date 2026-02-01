@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setDialogVisibility } from '../../../store/reducers/dialog-visible-slice'
 
@@ -11,8 +12,20 @@ const CoverSection = () => {
   const { setCursorSize } = useCursorSize()
   const dispatch = useDispatch()
 
+  const [isShortViewport, setIsShortViewport] = useState(false)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const checkHeight = () => setIsShortViewport(window.innerHeight < 900)
+    checkHeight()
+    window.addEventListener('resize', checkHeight)
+    return () => window.removeEventListener('resize', checkHeight)
+  }, [])
+
   return (
-    <section className="xl:h-screen h-full pb-[50px] pt-[120px] flex flex-col justify-center">
+    <section
+      className={`${isShortViewport ? 'h-auto' : 'xl:h-screen h-full'} pb-[50px] pt-[120px] flex flex-col justify-center`}
+    >
       <div className="flex flex-col">
         <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-normal">
           21.07 - 28.07

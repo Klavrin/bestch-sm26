@@ -2,12 +2,10 @@ import CustomButton from '../../../components/custom-button'
 import DashedButton from '../../../components/dashed-button'
 import useCursorSize from '../../../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
 
 const ReadyToChatSection = () => {
   const { setCursorSize } = useCursorSize()
   const { t } = useTranslation()
-  const navigate = useNavigate()
 
   return (
     <section className="md:py-[130px] py-[50px] font-nohemi" id="apply">
