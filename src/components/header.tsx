@@ -74,27 +74,15 @@ const Header = () => {
         <nav className="lg:flex hidden gap-[10px] items-center text-[15px]">
           {links.map((link, index) => (
             <Fragment key={link.title}>
-              {link.download ? (
-                <a
-                  href={link.download}
-                  download
-                  className="hover:opacity-70 transition-all"
-                  onMouseOver={() => setCursorSize(60)}
-                  onMouseLeave={() => setCursorSize(40)}
-                >
-                  {t(link.title)}
-                </a>
-              ) : (
-                <Link
-                  to={link.to ? link.to : '#'}
-                  className="hover:opacity-70 transition-all"
-                  onMouseOver={() => setCursorSize(60)}
-                  onMouseLeave={() => setCursorSize(40)}
-                  onClick={(e) => handleHashClick(e, link.to ? link.to : '#')}
-                >
-                  {t(link.title)}
-                </Link>
-              )}
+              <Link
+                to={link.to ? link.to : '#'}
+                className="hover:opacity-70 transition-all"
+                onMouseOver={() => setCursorSize(60)}
+                onMouseLeave={() => setCursorSize(40)}
+                onClick={(e) => handleHashClick(e, link.to ? link.to : '#')}
+              >
+                {t(link.title)}
+              </Link>
 
               {index !== links.length - 1 && (
                 <img src={Ellipse} alt="" className="-z-50" loading="lazy" />

@@ -2,13 +2,12 @@ import CustomButton from '../../../components/custom-button'
 import DashedButton from '../../../components/dashed-button'
 import useCursorSize from '../../../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
-import { useDispatch } from 'react-redux'
-import { setDialogVisibility } from '../../../store/reducers/dialog-visible-slice'
+import { useNavigate } from 'react-router-dom'
 
 const ReadyToChatSection = () => {
   const { setCursorSize } = useCursorSize()
   const { t } = useTranslation()
-  const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   return (
     <section className="md:py-[130px] py-[50px] font-nohemi" id="apply">
@@ -30,14 +29,26 @@ const ReadyToChatSection = () => {
       </p>
 
       <div className="flex justify-center md:gap-[46px] gap-[18px] mt-[66px]">
-        <DashedButton innerText="Apply Now!" />
+        <DashedButton
+          innerText="Apply Now!"
+          onClick={() =>
+            navigate('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+          }
+        />
         <CustomButton
           innerText="Apply Now!"
           styles="xl:px-[117px] md:px-[8.35vw] px-[53px] py-[10px] xl:text-[60px] text-[4.28vw]"
           imgStyles="xl:min-w-[70px] sm:min-w-[5vw] min-w-[30px]"
-          onClick={() => dispatch(setDialogVisibility())}
+          onClick={() =>
+            navigate('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+          }
         />
-        <DashedButton innerText="Apply Now!" />
+        <DashedButton
+          innerText="Apply Now!"
+          onClick={() =>
+            navigate('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+          }
+        />
       </div>
     </section>
   )
