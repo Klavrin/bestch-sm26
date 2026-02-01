@@ -42,7 +42,7 @@ const TeamSection = () => {
     {
       image: tudor,
       title: 'Activity',
-      name: 'Tudor Deviză'
+      name: 'Tudor Deviza'
     },
     {
       image: frunzaDaniel,
