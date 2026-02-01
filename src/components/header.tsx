@@ -52,12 +52,12 @@ const Header = () => {
               <img
                 src={BestCoursesImage}
                 alt="Best Courses"
-                className="xl:h-[100px] h-[70px]"
+                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[60px] w-auto transition-all duration-300"
               />
               <img
                 src={BestCh}
                 alt="Best Summer Course"
-                className="xl:h-[100px] h-[70px]"
+                className="xl:h-[100px] lg:h-[80px] md:h-[70px] h-[60px] w-auto transition-all duration-300"
               />
             </div>
           </Link>
@@ -76,7 +76,7 @@ const Header = () => {
         </div>
 
         {/* On large screens showing the map */}
-        <nav className="lg:flex hidden gap-[15px] items-center text-[15px]">
+        <nav className="lg:flex hidden gap-[10px] items-center text-[15px]">
           {links.map((link, index) => (
             <Fragment key={link.title}>
               {link.download ? (
