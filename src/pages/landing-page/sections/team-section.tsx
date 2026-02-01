@@ -46,7 +46,7 @@ const TeamSection = () => {
     },
     {
       image: frunzaDaniel,
-      title: 'Human Relations',
+      title: 'Human Resources',
       name: 'Frunză Daniel'
     },
     {

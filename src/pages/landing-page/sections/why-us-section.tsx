@@ -43,15 +43,15 @@ const WhyUsSection = () => {
   const spans = [
     {
       innerText:
-        'Generative AI has taken the world by storm, changing how we write, code, and interact with technology. But a new paradigm is emerging that promises to go even further: agentic systems – software entities that can make decisions, take actions, and pursue goals autonomously.'
+        'Generative AI has taken the world by storm, changing how we write, code, and interact with technology. But a new paradigm is emerging that promises to go even further: agentic systems - software entities that can make decisions, take actions, and pursue goals autonomously.'
     },
     {
       innerText:
-        'Join us on a hands-on journey into the world of agentic systems. Participants will explore how intelligent agents perceive their environment, reason about goals, and act to solve real-world problems.'
+        'Besides academic exploration, you can also explore the capital city of Moldova, Chișinău, a vibrant place that seamlessly blends history and modern life. You will fall in love with our iconic dishes, rich flavours, and distinctive culture shaped by centuries of tradition, such as our famous stuffed cabbage rolls, polenta, and our renowned local wines. Here, the entire city is yours to discover at your own pace.'
     },
     {
       innerText:
-        "No prior AI experience is required – only curiosity and a willingness to explore how tomorrow's software systems think, decide, and act."
+        "No prior AI experience is required - only curiosity and a willingness to explore how tomorrow’s software systems think, decide, and act. All you need is an open mind and the desire to learn. See you this summer!"
     }
   ]
 
