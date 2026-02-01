@@ -158,11 +158,11 @@ const LearningObjectives = () => {
         onMouseOver={() => setCursorSize(80)}
         onMouseLeave={() => setCursorSize(40)}
       >
-        By the end of this course, you will understand what are agentic systems and why
-        they matter, how software agents can perceive, decide, and act, and how modern AI
-        systems use agents to solve tasks autonomously. Participants will gain confidence
-        exploring AI concepts through hands-on experimentation, even with minimal prior
-        programming experience.
+        By the end of this course, you will understand what are agentic systems
+        and why they matter, how software agents can perceive, decide, and act,
+        and how modern AI systems use agents to solve tasks autonomously.
+        Participants will gain confidence exploring AI concepts through hands-on
+        experimentation, even with minimal prior programming experience.
       </p>
 
       <div ref={listContainerRef} className="mt-16">

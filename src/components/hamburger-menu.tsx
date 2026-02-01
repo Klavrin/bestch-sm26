@@ -21,7 +21,7 @@ const HamburgerMenu = ({ openDrawer, drawerRef }: HamburgerMenuProps) => {
   return (
     <img
       src={HamburgerMenuSvg}
-      className="block sm:hidden w-[30px] h-[20px] absolute cursor-pointer right-[16px]"
+      className="block lg:hidden w-[30px] h-[20px] absolute cursor-pointer right-[16px]"
       onClick={openDrawerWithAnimation}
       loading="lazy"
     />
