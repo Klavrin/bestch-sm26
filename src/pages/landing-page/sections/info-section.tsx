@@ -29,7 +29,7 @@ const InfoSection = () => {
             onMouseOver={() => setCursorSize(80)}
             onMouseLeave={() => setCursorSize(40)}
           >
-            <h2 className="xl:text-5xl md:text-[3.6vw] text-2xl">22 Hours</h2>
+            <h2 className="xl:text-5xl md:text-[3.6vw] text-2xl">21 Hours</h2>
             <p className="text-[#8D9B00] md:text-base text-sm">Hours</p>
           </div>
         </div>
