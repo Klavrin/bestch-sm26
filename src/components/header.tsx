@@ -36,14 +36,14 @@ const Header = () => {
   return (
     <header className="w-screen absolute z-40 transform-gpu">
       <div className="max-w-[1400px] h-[120px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500">
-        <div className="sm:static sm:left-0 absolute right-0 sm:-translate-x-0 -translate-x-1/2 transition-transform duration-300">
+        <div>
           <Link
             to="/"
             className="inline-block hover:opacity-80 transition-opacity"
             onMouseOver={() => setCursorSize(100)}
             onMouseLeave={() => setCursorSize(40)}
           >
-            <div className="flex items-center gap-2 w-auto transition-transform duration-300">
+            <div className="flex items-center gap-2 w-auto transition-transform duration-300 origin-left scale-100 md:scale-105 lg:scale-110 xl:scale-115">
               <img
                 src={BestCoursesImage}
                 alt="Best Courses"
