@@ -43,18 +43,18 @@ const Header = () => {
             onMouseOver={() => setCursorSize(100)}
             onMouseLeave={() => setCursorSize(40)}
           >
-            <div className="flex items-center w-auto transition-transform duration-300 origin-left scale-75 sm:scale-95 md:scale-105 lg:scale-115 xl:scale-125">
+            <div className="flex items-center w-auto gap-1 transition-transform duration-300 origin-left scale-75 sm:scale-95 md:scale-105 lg:scale-115 xl:scale-125">
               <img
                 src={BestCoursesImage}
                 alt="Best Courses"
                 className="transition-all duration-300 relative top-[4px]"
-                width={155}
+                width={175}
               />
               <img
                 src={BestCh}
                 alt="Best Summer Course"
                 className="transition-all duration-300"
-                width={168}
+                width={169}
               />
             </div>
           </Link>
