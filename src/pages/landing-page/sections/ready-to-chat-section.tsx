@@ -22,7 +22,7 @@ const ReadyToChatSection = () => {
           "Eager to transform your digital aspirations into a tangible online presence? We're at your service. Whether you have a specific project in mind or are keen on exploring potential opportunities, the Media Unbothered team is prepared for a meaningful discussion."
         )} */}
         Start your Agentic AI journey today! Whether you have a specific project in mind
-        or are keen on exploring potential opportunities, this course is designed to guide
+        or are keen on exploring potential opportunities, this Course is designed to guide
         you every step of the way.
       </p>
 

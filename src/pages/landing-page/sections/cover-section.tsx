@@ -60,7 +60,7 @@ const CoverSection = () => {
           )} */}
           Are you ready to embark on a journey of a lifetime, where you get to form
           lasting friendships, learn new skills, have the fun of your life and explore the
-          culture of Moldova? Then don't hesitate to apply to our course now!
+          culture of Moldova? Then don't hesitate to apply to our Course now!
         </p>
 
         <HireUsButton

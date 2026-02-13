@@ -150,7 +150,7 @@ const LearningObjectives = () => {
   return (
     <section className="md:py-[130px] py-[50px]" id="survival-guide">
       <h2 className="text-[#EB7400]/80 md:text-xl text-base font-normal leading-normal md:mb-[37px] mb-5">
-        Learning objectives of the course
+        Learning objectives of the Course
       </h2>
 
       <p
@@ -158,7 +158,7 @@ const LearningObjectives = () => {
         onMouseOver={() => setCursorSize(80)}
         onMouseLeave={() => setCursorSize(40)}
       >
-        By the end of this course, you will understand what are agentic systems
+        By the end of this Course, you will understand what are agentic systems
         and why they matter, how software agents can perceive, decide, and act,
         and how modern AI systems use agents to solve tasks autonomously.
         Participants will gain confidence exploring AI concepts through hands-on
@@ -170,7 +170,7 @@ const LearningObjectives = () => {
           ref={listTitleRef}
           className="md:text-[28px] text-[22px] font-normal mb-12 text-black/80"
         >
-          After completing the course, you will be able to:
+          After completing the Course, you will be able to:
         </h3>
 
         <div className="space-y-4">
