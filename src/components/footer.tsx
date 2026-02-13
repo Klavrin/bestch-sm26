@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import useCursorSize from '../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
 
-import MediaUnbothered from '../assets/media-unbothered.svg'
+//import MediaUnbothered from '../assets/media-unbothered.svg'
 import Facebook from '../assets/footer/Facebook.svg'
 import Instagram from '../assets/footer/Instagram.svg'
 import LinkedIn from '../assets/footer/LinkedIn.svg'
