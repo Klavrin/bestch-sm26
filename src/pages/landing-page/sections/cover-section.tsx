@@ -4,7 +4,8 @@ import CustomButton from '../../../components/custom-button'
 import HireUsButton from '../../../components/hire-us-button'
 import useCursorSize from '../../../lib/use-cursor-size'
 
-import MediaUnbothered from '../../../assets/media-unbothered.svg'
+//import MediaUnbothered from '../../../assets/media-unbothered.svg'
+import GradientTitle from "../../../components/gradient-title";
 
 const CoverSection = () => {
   const { setCursorSize } = useCursorSize()
@@ -23,12 +24,17 @@ const CoverSection = () => {
     <section
       className={`${isShortViewport ? 'h-auto' : 'xl:h-screen h-full'} pb-[50px] pt-[120px] flex flex-col justify-center`}
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col w-screen">
         <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-normal">
           21.07 - 28.07
           {/* {t('')} */}
         </h1>
-        <img
+
+        <GradientTitle setCursorSize={setCursorSize}>
+          BEST COURSE IN SUMMER
+        </GradientTitle>
+
+        {/*<img
           // src="./src/assets/media-unbothered.svg"
           src={MediaUnbothered}
           alt="Media Unbothered"
@@ -36,7 +42,7 @@ const CoverSection = () => {
           onMouseOver={() => setCursorSize(300)}
           onMouseLeave={() => setCursorSize(40)}
           loading="lazy"
-        />
+        />*/}
         <h1 className="xl:text-[4rem] sm:text-[5vw] text-[28px] font-medium leading-[1] mt-[2vw]">
           When Code Makes Decisions:
           <br /> A Gentle Introduction to Agentic AI
