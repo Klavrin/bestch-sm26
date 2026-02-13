@@ -5,6 +5,7 @@ import LearningObjectives from './sections/learning-objectives'
 import TeamSection from './sections/team-section'
 import InfoSection from './sections/info-section'
 import OurServicesSection from './sections/our-services-section'
+import WhatIsBestCourse from './sections/what-is-best'
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,8 @@ const LandingPage = () => {
         <CoverSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <InfoSection />
+        <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
+        <WhatIsBestCourse />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <WhyUsSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
