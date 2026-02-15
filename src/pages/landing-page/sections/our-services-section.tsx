@@ -17,7 +17,7 @@ const OurServicesSection = () => {
     {
       title: 'Survival Guide',
       sideText: 'Have a look!',
-      to: 'https://drive.google.com/file/d/1pq3V-Grn6suJcNlS-xME9c9y_NWD-fJC/view?usp=drive_link'
+      to: 'https://drive.google.com/file/d/1LfriiyMjfx7lKOxeYbGTQIFAl6bpJaII/view?usp=drive_link'
     }
     // {
     //   title: 'Maintenance',
