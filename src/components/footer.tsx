@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import useCursorSize from '../lib/use-cursor-size'
 import { useTranslation } from 'react-i18next'
 
-//import MediaUnbothered from '../assets/media-unbothered.svg'
+import MediaUnbothered from '../assets/media-unbothered.svg'
 import Facebook from '../assets/footer/Facebook.svg'
 import Instagram from '../assets/footer/Instagram.svg'
 import LinkedIn from '../assets/footer/LinkedIn.svg'
 
-import GradientTitle from "./gradient-title";
+//import GradientTitle from "./gradient-title";
 
 const Footer = () => {
   const { setCursorSize } = useCursorSize()
@@ -48,18 +48,18 @@ const Footer = () => {
 
   return (
     <footer className="max-w-[1400px] mx-auto xl:px-[75px] px-[18px] pt-10 pb-5 text-black transform-gpu">
-    {/*<img
+    <img
         src={MediaUnbothered}
         alt="Media Unbothered"
         className="w-screen -z-50"
         onMouseOver={() => setCursorSize(300)}
         onMouseLeave={() => setCursorSize(40)}
         loading="lazy"
-      />*/}
+      />
 
-      <GradientTitle setCursorSize={setCursorSize}>
+      {/*<GradientTitle setCursorSize={setCursorSize}>
         BEST COURSE IN SUMMER
-      </GradientTitle>
+      </GradientTitle>*/}
 
       <div className="mt-[50px] flex md:flex-row flex-col justify-between items-center gap-[10px]">
         <nav className="flex max-[500px]:flex-col flex-row lg:gap-[50px] gap-[20px] text-center">
