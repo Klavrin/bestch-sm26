@@ -34,7 +34,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="w-screen absolute z-40 transform-gpu">
+    <header className="w-full absolute z-40 transform-gpu">
       <div className="max-w-[1400px] h-[120px] mx-auto xl:px-[75px] px-[18px] text-black flex justify-between items-center transition-[padding] duration-500 gap-4">
         <div>
           <Link
