@@ -1,14 +1,14 @@
 import CoreTeamMember from '../../../components/core-team-member'
 import useCursorSize from '../../../lib/use-cursor-size'
-import leTrueGaben from '../../../assets/photos/le_true_gaben.png'
+import leTrueGaben from '../../../assets/photos/le_true_gaben.jpg'
 import vaseaBrinza from '../../../assets/photos/vasea_brinza.png'
-import bolunAlexandra from '../../../assets/photos/le_bolun_alexandra.png'
-import serjMaximus from '../../../assets/photos/serj_maximus.png'
-import tudor from '../../../assets/photos/le_tudor.png'
-import frunzaDaniel from '../../../assets/photos/le_frunza_daniel.png'
-import sopus from '../../../assets/photos/sopus.png'
-import cristina from '../../../assets/photos/cristina.jpeg'
-import gaben from '../../../assets/photos/gaben.png'
+import bolunAlexandra from '../../../assets/photos/le_bolun_alexandra.jpg'
+import serjMaximus from '../../../assets/photos/serj_maximus.jpg'
+import tudor from '../../../assets/photos/le_tudor.jpg'
+import frunzaDaniel from '../../../assets/photos/le_frunza_daniel.jpg'
+import sopus from '../../../assets/photos/sopus.jpg'
+import cristina from '../../../assets/photos/cristina.jpg'
+import gaben from '../../../assets/photos/bianca.jpg'
 import lili from '../../../assets/photos/lili.jpg'
 import octav from '../../../assets/photos/octav.jpg'
 
@@ -25,14 +25,14 @@ const TeamSection = () => {
     {
       image: vaseaBrinza,
       title: 'President',
-      name: 'Brînză Vasile',
+      name: 'Vasile Brînză',
       email: 'vasile.brinza@best-eu.org',
       phone: '+373 67 773 990'
     },
     {
       image: bolunAlexandra,
       title: 'Academics',
-      name: 'Bolun Alexandra'
+      name: 'Alexandra Bolun'
     },
     {
       image: serjMaximus,
@@ -47,7 +47,7 @@ const TeamSection = () => {
     {
       image: frunzaDaniel,
       title: 'Human Resources',
-      name: 'Frunză Daniel'
+      name: 'Daniel Frunză'
     },
     {
       image: sopus,
