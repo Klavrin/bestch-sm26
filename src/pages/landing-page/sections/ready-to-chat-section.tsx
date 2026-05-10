@@ -24,13 +24,16 @@ const ReadyToChatSection = () => {
         Start your Agentic AI journey today! Whether you have a specific project in mind
         or are keen on exploring potential opportunities, this Course is designed to guide
         you every step of the way.
+        <br />
+        <br />
+        Local applications are open from May 11th to May 24th!
       </p>
 
       <div className="flex justify-center md:gap-[46px] gap-[18px] mt-[66px]">
         <DashedButton
           innerText="Apply Now!"
           onClick={() =>
-            window.open('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+            window.open('https://forms.gle/11rPZ7sdsEr4Cw9z7')
           }
         />
         <CustomButton
@@ -38,13 +41,13 @@ const ReadyToChatSection = () => {
           styles="xl:px-[117px] md:px-[8.35vw] px-[53px] py-[10px] xl:text-[60px] text-[4.28vw]"
           imgStyles="xl:min-w-[70px] sm:min-w-[5vw] min-w-[30px]"
           onClick={() =>
-            window.open('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+            window.open('https://forms.gle/11rPZ7sdsEr4Cw9z7')
           }
         />
         <DashedButton
           innerText="Apply Now!"
           onClick={() =>
-            window.open('https://www.best.eu.org/event/details.jsp?activity=k3ljman')
+            window.open('https://forms.gle/11rPZ7sdsEr4Cw9z7')
           }
         />
       </div>
