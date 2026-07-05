@@ -65,7 +65,7 @@ const CoverSection = () => {
 
         <HireUsButton
           onClick={() =>
-            window.open('https://forms.gle/11rPZ7sdsEr4Cw9z7')
+            window.open('https://pa.best.eu.org/website/event/details.jsp?activity=k3ljman')
           }
         />
         <CustomButton
@@ -74,7 +74,7 @@ const CoverSection = () => {
           imgStyles="min-w-[40px]"
           hideForWideScreens
           onClick={() =>
-            window.open('https://forms.gle/11rPZ7sdsEr4Cw9z7')
+            window.open('https://pa.best.eu.org/website/event/details.jsp?activity=k3ljman')
           }
         />
       </div>
