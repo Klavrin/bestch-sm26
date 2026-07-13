@@ -1,8 +1,8 @@
 // partner-section.tsx
 import useCursorSize from '../lib/use-cursor-size'
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef } from 'react'
+// import { gsap } from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export interface PartnerSectionProps {
     title: string;

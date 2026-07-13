@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import useCursorSize from '../../../lib/use-cursor-size'
-import { useTranslation } from 'react-i18next'
+// import { useEffect, useRef } from 'react'
+// import { gsap } from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import useCursorSize from '../../../lib/use-cursor-size'
+// import { useTranslation } from 'react-i18next'
 import PartnerSection, { PartnerItem } from '../../../components/partner-section'
 // media
 import allied from '../../../assets/allied.png'
