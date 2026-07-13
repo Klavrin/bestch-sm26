@@ -6,6 +6,7 @@ import TeamSection from './sections/team-section'
 import InfoSection from './sections/info-section'
 import OurServicesSection from './sections/our-services-section'
 import WhatIsBestCourse from './sections/what-is-best'
+import PartnerPage from './sections/partner-page'
 
 const LandingPage = () => {
   return (
@@ -26,6 +27,8 @@ const LandingPage = () => {
         <ReadyToChatSection />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
         <TeamSection />
+        <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
+        <PartnerPage />
         <hr className="w-full h-[2px] bg-black opacity-40 rounded-full" />
       </div>
     </div>
