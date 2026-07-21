@@ -39,18 +39,18 @@ const mediaItems: PartnerItem[] = [
     {
         logo: simpals,
         alt: "Simpals",
-        imgClassName: "md:translate-y-1",
+        imgClassName: "",
         link: "https://simpals.com/en"
     },
     {
         logo: stiri,
         alt: "Stiri MD",
-        imgClassName: "md:translate-y-4",
+        imgClassName: "md:translate-y-3",
         link: "https://stiri.md/" },
     {
         logo: point,
         alt: "Point",
-        imgClassName: "md:translate-y-1",
+        imgClassName: "",
         link: "https://point.md/ro/"
     },
 ]

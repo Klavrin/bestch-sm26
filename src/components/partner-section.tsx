@@ -19,16 +19,34 @@ export interface PartnerItem {
 export function PartnerCard({ logo, alt = "", link, description, imgClassName = "", onEnter, onLeave }: PartnerItem & { onEnter?: () => void; onLeave?: () => void }) {
     const content = (
         <div
-        onMouseOver={onEnter}
-        onMouseLeave={onLeave}
-        className="group flex flex-col md:flex-row items-center gap-4 w-full md:w-auto bg-[#FFF8F0] border border-[#EB7400]/25 shadow-sm shadow-[#EB7400]/10 rounded-xl px-8 py-7 transition-colors duration-300 hover:bg-[#EB7400]/30"
+            onMouseOver={onEnter}
+            onMouseLeave={onLeave}
+            className="
+                group
+                flex
+                flex-col
+                md:flex-row
+                items-center
+                gap-4
+                w-full
+                md:w-auto
+                bg-[#FFF8F0]
+                border
+                border-[#EB7400]/25
+                shadow-sm
+                shadow-[#EB7400]/10
+                rounded-xl
+                px-8 py-7
+                transition-colors
+                duration-300
+                hover:bg-[#EB7400]/30"
         >
-        <img src={logo} alt={alt} className={`h-20 md:h-24 object-contain ${imgClassName}`} />
-        {description && (
-            <p id="span" className="max-w-md text-sm md:text-base text-neutral-700 text-center md:text-left">
-                {description}
-            </p>
-        )}
+            <img src={logo} alt={alt} className={`h-14 md:h-16 object-contain ${imgClassName}`} />
+            {description && (
+                <p id="span" className="max-w-md text-sm md:text-base text-neutral-700 text-center md:text-left">
+                    {description}
+                </p>
+            )}
         </div>
     );
 
